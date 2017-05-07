@@ -24,6 +24,8 @@
 //
 //
 void waiting();
+void clearscreen();
+void expose();
 
 #include "pins_arduino.h" 
 #include "arduino.h"

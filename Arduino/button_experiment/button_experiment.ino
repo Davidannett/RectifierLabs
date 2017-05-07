@@ -16,12 +16,13 @@ int startbuttonState = 0;         // variable for reading the pushbutton status
   void setup()
   {
     lcd.begin(16, 2);
-    lcd.setCursor(0, 0);
-    lcd.print("                ");
+	clearscreen()
+    //lcd.setCursor(0, 0);
+    //lcd.print("                ");
+    //lcd.setCursor(0, 1);
+    //lcd.print("                ");
     lcd.setCursor(0, 1);
-    lcd.print("                ");
-    lcd.setCursor(0, 1);
-    lcd.print("    Waiting     ");  
+    lcd.print(" opening serial ");  
     Serial.begin(9600);
     pinMode(LED_BUILTIN, OUTPUT);
     pinMode(startbuttonPin, INPUT);
@@ -34,58 +35,118 @@ int startbuttonState = 0;         // variable for reading the pushbutton status
     startbuttonState = digitalRead(startbuttonPin);
       if (startbuttonState == HIGH) 
         {
-          digitalWrite(UVPanelPin, HIGH);
-          int startbuttonState = 0;
-          lcd.setCursor(0, 0);
-          lcd.print("                ");
-          lcd.setCursor(0, 1);
-          lcd.print("                ");
-          lcd.setCursor(0, 0);
-          lcd.print("    EXPOSING    ");
-          Serial.print("in exposure mode");
-          Serial.println("");
-          delay(5000);
-          digitalWrite(UVPanelPin, LOW);
-          lcd.setCursor(0, 0);
-          lcd.print("                ");
-          lcd.setCursor(0, 1);
-          lcd.print("                ");
-          lcd.setCursor(0, 1);
-          lcd.print("    EXPOSED   ");
-          delay(2000);
-          lcd.setCursor(0, 0);
-          lcd.print("                ");
-          lcd.setCursor(0, 1);
-          lcd.print("                ");
+			expose()
+          //digitalWrite(UVPanelPin, HIGH);
+          //int startbuttonState = 0;
+          //lcd.setCursor(0, 0);
+          //lcd.print("                ");
+          //lcd.setCursor(0, 1);
+          //lcd.print("                ");
+          //lcd.setCursor(0, 0);
+          //lcd.print("    EXPOSING    ");
+          //Serial.print("in exposure mode");
+          //Serial.println("");
+          //delay(5000);
+          //digitalWrite(UVPanelPin, LOW);
+          //lcd.setCursor(0, 0);
+          //lcd.print("                ");
+          //lcd.setCursor(0, 1);
+          //lcd.print("                ");
+          //lcd.setCursor(0, 1);
+          //lcd.print("    EXPOSED   ");
+          //delay(2000);
+          //lcd.setCursor(0, 0);
+          //lcd.print("                ");
+          //lcd.setCursor(0, 1);
+          //lcd.print("                ");
         } 
       else 
         {
           Serial.write("pin still LOW");
           Serial.println("");
-          lcd.setCursor(0, 0);
-          lcd.print("Waiting to Start");
-          delay(150);
-          lcd.setCursor(0, 1);
-          lcd.print("     .          ");
-          delay(150);
-          lcd.setCursor(0, 1);
-          lcd.print("     ..         ");
-          delay(150);
-          lcd.setCursor(0, 1);
-          lcd.print("     ...        ");
-          delay(150);
-          lcd.setCursor(0, 1);
-          lcd.print("     ....       ");
-          delay(150);
-          lcd.setCursor(0, 1);
-          lcd.print("     .....      ");
-          delay(150);
-          lcd.setCursor(0, 1);
-          lcd.print("                ");
-          delay(1000);
+		  waiting()
+          //lcd.setCursor(0, 0);
+          //lcd.print("Waiting to Start");
+          //delay(150);
+          //lcd.setCursor(0, 1);
+          //lcd.print("     .          ");
+          //delay(150);
+          //lcd.setCursor(0, 1);
+          //lcd.print("     ..         ");
+          //delay(150);
+          //lcd.setCursor(0, 1);
+          //lcd.print("     ...        ");
+          //delay(150);
+          //lcd.setCursor(0, 1);
+          //lcd.print("     ....       ");
+          //delay(150);
+          //lcd.setCursor(0, 1);
+          //lcd.print("     .....      ");
+          //delay(150);
+          //lcd.setCursor(0, 1);
+          //lcd.print("                ");
+          //delay(1000);
         } 
 		}
 void waiting()
 {
-	
+	lcd.setCursor(0, 0);
+	lcd.print("Waiting to Start");
+	delay(150);
+	lcd.setCursor(0, 1);
+	lcd.print("     .          ");
+	delay(150);
+	lcd.setCursor(0, 1);
+	lcd.print("     ..         ");
+	delay(150);
+	lcd.setCursor(0, 1);
+	lcd.print("     ...        ");
+	delay(150);
+	lcd.setCursor(0, 1);
+	lcd.print("     ....       ");
+	delay(150);
+	lcd.setCursor(0, 1);
+	lcd.print("     .....      ");
+	delay(150);
+	lcd.setCursor(0, 1);
+	lcd.print("                ");
+	delay(150)
+}
+
+void clearscreen()
+{
+	lcd.setCursor(0, 0);
+	lcd.print("                ");
+	lcd.setCursor(0, 1);
+	lcd.print("                ");
+}
+
+void expose()
+{
+	digitalWrite(UVPanelPin, HIGH);
+	int startbuttonState = 0;
+	clearscreen()
+	//lcd.setCursor(0, 0);
+	//lcd.print("                ");
+	//lcd.setCursor(0, 1);
+	//lcd.print("                ");
+	lcd.setCursor(0, 0);
+	lcd.print("    EXPOSING    ");
+	Serial.print("in exposure mode");
+	Serial.println("");
+	delay(5000);
+	digitalWrite(UVPanelPin, LOW);
+	clearscreen()
+	//lcd.setCursor(0, 0);
+	//lcd.print("                ");
+	//lcd.setCursor(0, 1);
+	//lcd.print("                ");
+	lcd.setCursor(0, 1);
+	lcd.print("    EXPOSED   ");
+	delay(2000);
+	clearscreen()
+	//lcd.setCursor(0, 0);
+	//lcd.print("                ");
+	//lcd.setCursor(0, 1);
+	//lcd.print("                ");
 }
