@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutomateBuild xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/EnvironmentsTeam/AutomateBuild/Main/ASPS.AutomateBuild.xsd">
+	<Description>Progressivecom</Description>
+	<Actions>
+		<Action Type="Security.AddToLocalGroup">
+					<Param Name="Group" Comment="required, single">L-Z-APPLICATIONS</Param>
+					<Param Name="Add" Comment="optional, list; format=domain\account">NTAUTHORITY\IUSR</Param>
+				</Action>
+		<Action Type="Registry.AddValue">
+					<Param Name="Hive" Comment="required, single; enum=HKEY_LOCAL_MACHINE,HKEY_CURRENT_USER,HKLM,HKCU">HKEY_LOCAL_MACHINE</Param>
+					<Param Name="Key" Comment="required, single; format=registry\path">SOFTWARE\Wow6432Node\Microsoft\.NetFramework\v4.0.30319</Param>
+					<Param Name="Value" Comment="required, single">SchUseStrongCrypto</Param>
+					<Param Name="Type" Comment="optional, single; enum=REG_SZ, REG_DWORD, REG_QWORD, REG_BINARY; defaults to REG_SZ">REG_DWORD</Param>
+					<Param Name="Data" Comment="required, single">1</Param>
+				</Action>
+		<Action Type="Registry.AddValue">
+				<Param Name="Hive" Comment="required, single; enum=HKEY_LOCAL_MACHINE,HKEY_CURRENT_USER,HKLM,HKCU">HKEY_LOCAL_MACHINE</Param>
+				<Param Name="Key" Comment="required, single; format=registry\path">SOFTWARE\Microsoft\.NetFramework\v4.0.30319</Param>
+				<Param Name="Value" Comment="required, single">SchUseStrongCrypto</Param>
+				<Param Name="Type" Comment="optional, single; enum=REG_SZ, REG_DWORD, REG_QWORD, REG_BINARY; defaults to REG_SZ">REG_DWORD</Param>
+				<Param Name="Data" Comment="required, single">1</Param>
+			</Action>
+		<Action Type="Registry.AddKey">
+					<Param Name="Hive" Comment="required, single; enum=HKEY_LOCAL_MACHINE,HKEY_CURRENT_USER,HKLM,HKCU">HKEY_LOCAL_MACHINE</Param>
+					<Param Name="Key" Comment="optional, list; key to add">SYSTEM\CurrentControlSet\Services\EventLog\Application\WebGuard</Param>
+				</Action>
+		<Action Type="Registry.AddValue">
+					<Param Name="Hive" Comment="required, single; enum=HKEY_LOCAL_MACHINE,HKEY_CURRENT_USER,HKLM,HKCU">HKEY_LOCAL_MACHINE</Param>
+					<Param Name="Key" Comment="required, single; format=registry\path">SYSTEM\CurrentControlSet\Services\EventLog\Application\WebGuard</Param>
+					<Param Name="Value" Comment="required, single">EventMessageFile</Param>
+					<Param Name="Type" Comment="optional, single; enum=REG_SZ, REG_DWORD, REG_QWORD, REG_BINARY; defaults to REG_SZ">REG_SZ</Param>
+					<Param Name="Data" Comment="required, single">C:\Windows\Microsoft.NET\Framework\v2.0.50727\EventLogMessages.dll</Param>
+				</Action>
+	</Actions>
+</AutomateBuild>

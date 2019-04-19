@@ -1,0 +1,35 @@
+<AutomateBuild xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ASPS.AutomateBuild.xsd">
+	<Description>XML demonstrating all Action / Param usage</Description>
+
+    <Action Type="Security.AddToLocalGroup">
+			<Param Name="Group" Comment="required, single">Local AD group</Param>
+			<Param Name="Add" Comment="optional, list; format=domain\account">PROG1\ZEXAMPLE</Param>
+		</Action>
+
+<Action Type="Powershell.ExecuteCommand">
+			<Param Name="Command" Comment="required, list">command line</Param>
+			<Param Name="FailOnNonZeroReturnCode" Comment="optional, single, boolean, default false">true</Param>
+			<Param Name="FailOnReturnCodeList" Comment="optional, single, text, default blank">1,2,3,4</Param>
+		</Action>
+
+
+<Action Type="Powershell.ExecuteCommand">
+			<Param Name="Command">attrib -r d:\inetpub\vserver\default\*.* /s</Param>
+		</Action>
+
+
+        
+
+<Action Type="Registry.AddKey">
+			<Param Name="Hive" Comment="required, single; enum=HKEY_LOCAL_MACHINE,HKEY_CURRENT_USER,HKLM,HKCU">HKEY_LOCAL_MACHINE</Param>
+			<Param Name="Key" Comment="optional, list; key to add">SOFTWARE\Wow6432Node\Progressive\A\B\C</Param>
+		</Action>
+
+
+<Action Type="Registry.AddValue">
+			<Param Name="Hive" Comment="required, single; enum=HKEY_LOCAL_MACHINE,HKEY_CURRENT_USER,HKLM,HKCU">HKEY_LOCAL_MACHINE</Param>
+			<Param Name="Key" Comment="required, single; format=registry\path">SOFTWARE\Wow6432Node\Progressive\DMG\A</Param>
+			<Param Name="Value" Comment="required, single">Value1</Param>
+			<Param Name="Type" Comment="optional, single; enum=REG_SZ, REG_DWORD, REG_QWORD, REG_BINARY; defaults to REG_SZ">REG_SZ</Param>
+			<Param Name="Data" Comment="required, single">data to store</Param>
+		</Action>

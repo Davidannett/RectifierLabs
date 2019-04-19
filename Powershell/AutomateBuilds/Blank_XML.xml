@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutomateBuild xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ASPS.AutomateBuild.xsd">
+	<Description>SOME NAME HERE</Description>
+        <FactDefinition Name="SOME NAME HERE">
+        </FactDefinition>
+    <Actions>
+        <Action Type="Action Type here" ID="SOME NAME HERE">
+			<Param Name="Group">L-File-Change</Param>
+		</Action>
+        <Action Type="Log.WriteLogEntry">
+			<Param Name="Text" Comment="required, single">Text to write to log file</Param>
+		</Action>
+    </Actions>
+</Automatebuild>

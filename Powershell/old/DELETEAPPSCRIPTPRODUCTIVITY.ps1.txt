@@ -1,0 +1,30 @@
+﻿ $Site = 'ProductivityManager'
+$WebAppNames = 'ProductivityManager'
+
+
+foreach($App in $WebAppNames){
+    # Get WebApplication Information
+    $WebApp = Get-WebApplication -Name $App
+    $WebAppPath = $WebApp.PhysicalPath
+    If($WebApp){
+        Write-Host "Performing IIS cleanup of $App on $env:COMPUTERNAME"
+        # Stop WebAppPool
+        Stop-WebAppPool -Name $WebApp.applicationPool
+        # Remove WebApplication (need SITE and NAME. Cannot get NAME from $WebApp)
+        Remove-WebApplication -Site $Site -Name $App -Confirm:$false
+        # Remove ApplicationPool
+      #  Remove-WebAppPool -Name $WebApp.ApplicationPool -Confirm:$false
+        If(Test-Path $WebAppPath){
+            # Delete Physical Path
+            Remove-Item -Path $WebAppPath -Recurse -Force -Confirm:$false
+        }
+       }
+}
+If(Test-Path -Path 'D:\Inetpub\vserver\ProductivityManager\Alpha\ProductivityManager'){
+    Write-Host "D:\Inetpub\vserver\ProductivityManager\Alpha\ProductivityManager"
+    Remove-Item -Path 'D:\Inetpub\vserver\ProductivityManager\Alpha\ProductivityManager' -Recurse -Force -Confirm:$false
+}
+If(Test-Path -Path 'D:\Inetpub\vserver\ProductivityManager\Bravo\ProductivityManager'){
+    Write-Host "D:\Inetpub\vserver\ProductivityManager\Bravo\ProductivityManager"
+    Remove-Item -Path 'D:\Inetpub\vserver\ProductivityManager\Bravo\ProductivityManager' -Recurse -Force -Confirm:$false
+    }

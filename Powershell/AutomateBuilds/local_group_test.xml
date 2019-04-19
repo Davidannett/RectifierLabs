@@ -1,0 +1,5 @@
+<Action Type="Powershell.ExecuteCommand" ID="adding site allowed variables, path additions and local IUSR add">
+            <Param Name="PSScript">
+                Add-LocalGroupMember -Group L-Z-APPLICATIONS -member "IUSR"
+            </Param>
+        </Action>

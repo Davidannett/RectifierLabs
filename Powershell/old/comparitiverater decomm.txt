@@ -1,0 +1,29 @@
+Prod:
+
+SCACRW01 - D:\inetpub\vserver\Raters
+
+Stop-WebAppPool -Name ComparativeRater
+Remove-WebAppPool ComparativeRater
+remove-website -name ComparativeRater
+Remove-Item -Path 'D:\inetpub\vserver\Raters' -Recurse -Force -Confirm:$false
+
+
+Dev:
+
+SCASHR6A - D:\inetpub\vserver\ComparativeRater-d
+
+Stop-WebAppPool -Name ComparativeRater-d
+Remove-WebAppPool ComparativeRater-d
+remove-website -name ComparativeRater-d
+Remove-Item -Path 'D:\inetpub\vserver\ComparativeRater-d' -Recurse -Force -Confirm:$false
+
+
+QA:
+
+SCASHR6A - D:\inetpub\vserver\ComparitiveRater-a
+
+Stop-WebAppPool -Name ComparativeRater-a
+Remove-WebAppPool ComparativeRater-a
+remove-website -name ComparativeRater-a
+Remove-Item -Path 'D:\inetpub\vserver\ComparativeRater-a' -Recurse -Force -Confirm:$false
+

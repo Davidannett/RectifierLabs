@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutomateBuild xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/EnvironmentsTeam/AutomateBuild/Main/ASPS.AutomateBuild.xsd">
+	<Description>Progressivecom</Description>
+	<FactDefinition Name="Environment">
+		<MatchRule Test="Default" Value="">QA</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRx0[0-9]">Production</MatchRule>
+		<MatchRule Test="RegEx" Value="SrPGRx2[0-9]">Production</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRX5[0-9]">Development</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGR[XW]9[0-9]">Gold</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGR[XW]8[0-9]|7[0-9]|6[0-9]">QA</MatchRule>
+	</FactDefinition>
+	<FactDefinition Name="Perf2Binding">
+		<MatchRule Test="Default" Value="">No</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGR[XW]7[0-9]">Yes</MatchRule>
+	</FactDefinition>
+	<FactDefinition Name="Location">
+		<MatchRule Test="Default" Value="">East</MatchRule>
+		<MatchRule Test="Prefix" Value="SC">East</MatchRule>
+		<MatchRule Test="Prefix" Value="SR">West</MatchRule>
+	</FactDefinition>
+	<FactDefinition Name="WEBID">
+		<MatchRule Test="Default" Value="">awebd</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGR[XW]5[0-9]|6[0-9]">twebd</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGR[XW]7[0-9]|8[0-9]">awebd</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRX0[0-9]|x9[0-9]">awebd</MatchRule>
+		<MatchRule Test="RegEx" Value="SRPGRX2[0-9]">awebd</MatchRule>
+	</FactDefinition>
+	<FactDefinition Name="VIPID">
+		<MatchRule Test="Default" Value="">QA</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRx0[0-9]">p3</MatchRule>
+		<MatchRule Test="RegEx" Value="SRPGRx2[0-9]">p5</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRx8[0-9]|x7[0-9]|x6[0-9]">QA</MatchRule>
+	</FactDefinition>
+	<FactDefinition Name="SiteBindingLetter">
+		<MatchRule Test="Default" Value="">ta</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRx0[0-9]">P3</MatchRule>
+		<MatchRule Test="RegEx" Value="SRPGRx2[0-9]">P5</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRX9[0-9]">G</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGR[XW]8[0-9]|7[0-9]|6[0-9]|5[0-9]">TA</MatchRule>
+	</FactDefinition>
+		<FactDefinition Name="LOG_ROOT">
+		<MatchRule Test="Default" Value="">D:\Data\Logs\IIS</MatchRule>
+	</FactDefinition>
+	<FactDefinition Name="SecondarySiteBindingLetter">
+		<MatchRule Test="Default" Value="">QA</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGR[XW]8[0-9]|7[0-9]|6[0-9]|5[0-9]">QA</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRx0[0-9]">p-</MatchRule>
+		<MatchRule Test="RegEx" Value="SRPGRx2[0-9]">p-</MatchRule>
+	</FactDefinition>
+	<FactDefinition Name="ZID">
+		<MatchRule Test="Default" Value="">Prog1\a119172</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRx0[0-9]">Progdmzq\ZHMPG01P</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRX9[0-9]">Progdmzq\ZHMPG01G</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGR[XW]8[0-9]|7[0-9]|6[0-9]|5[0-9]">Progdmzq\ZHMPG01T</MatchRule>
+		<MatchRule Test="RegEx" Value="SRPGRX2[0-9]">Progdmzq\ZHMPG01P</MatchRule>
+	</FactDefinition>
+	<FactDefinition Name="ZID_Secondary">
+		<MatchRule Test="Default" Value="">prog1\a119172</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGRx0[0-9]">progdmz\zubi002p</MatchRule>
+		<MatchRule Test="RegEx" Value="SCPGR[XW]8[0-9]|7[0-9]|6[0-9]|5[0-9]|9[0-9]">progdmzq\zubi002q</MatchRule>
+		<MatchRule Test="RegEx" Value="SRPGRx2[0-9]">progdmz\zubi002p</MatchRule>
+	</FactDefinition>
+	<Actions>
+		<Action Type="Security.AddToLocalGroup">
+			<Param Name="Group">Administrators</Param>
+			<Param Name="Add">PROGdmzq\d-z-scmpromotion-S</Param>
+			<Param Name="Add">PROGdmzq\Q-Z-SCMProMotion-S</Param>
+			<Param Name="Add">PRogdmzq\D-A-Homepage-S</Param>
+			<Param Name="Add">Progdmzq\D-L-ASPSConfig-S</Param>
+			<Param Name="Add">Progdmzq\q-a-homepage-s</Param>
+			<Param Name="Add">Progdmzq\q-a-homepage-TA-s</Param>
+			<Param Name="Add">Progdmzq\q-a-PAITWEB-APPDEV-S</Param>
+			<Param Name="Add">Progdmzq\q-L-PTST-S</Param>
+			<Param Name="Add">Progdmzq\S-A-ASPSENV-S</Param>
+			<Param Name="Add">Progdmzq\S-DBA-DB2WIN-TA</Param>
+		</Action>
+		<Action Type="Security.AddToLocalGroup">
+			<Param Name="Group">L-Z-APPLICATIONS</Param>
+			<Param Name="Add">PROGDMZQ\ZHBLG01Q</Param>
+			<Param Name="Add">PROGDMZQ\zhmpg01t</Param>
+			<Param Name="Add">PROGDMZQ\ZSTATI1Q</Param>
+			<Param Name="Add">PROGDMZQ\ZUBI002Q</Param>
+		</Action>
+		<Action Type="Security.AddToLocalGroup">
+			<Param Name="Group">L-FILE-READ</Param>
+			<Param Name="Add">PROGDMZQ\Q-R-PAITWEB-APPDEV-S</Param>
+			<Param Name="Add">PROGDMZQ\S-A-SECSCAN-S</Param>
+			<Param Name="Add">PROGDMZQ\S-R-DSEINTG-S</Param>
+			<Param Name="Add">PROGDMZQ\S-R-DSEPLAT-S</Param>
+			<Param Name="Add">PROGDMZQ\S-R-PRODCNTRL-S</Param>
+		</Action>
+		<Action Type="Security.AddToLocalGroup">
+			<Param Name="Group">L-File-Change</Param>
+			<Param Name="Add">progdmzq\D-L-ASPSCONFIG-S</Param>
+			<Param Name="Add">progdmzq\S-L-EMON-S</Param>
+		</Action>
+		<Action Type="IIS.CreateApplicationPool" ID="AppPool-Privacy" Conditions="ENVIRONMENT=Development,QA,Stress,Gold,Production">
+			<Param Name="Name">Privacy</Param>
+			<Param Name="Framework">v2.0</Param>
+			<Param Name="PipelineMode">Integrated</Param>
+			<Param Name="IdentityType">SpecificUser</Param>
+			<Param Name="UserName">##ZID##</Param>
+		</Action>
+		<Action Type="IIS.CreateApplicationPool" ID="AppPool-ProgressiveCom" Conditions="ENVIRONMENT=Development,QA,Stress,Gold,Production">
+			<Param Name="Name">ProgressiveCom</Param>
+			<Param Name="Framework">v4.0</Param>
+			<Param Name="PipelineMode">Integrated</Param>
+			<Param Name="IdentityType">SpecificUser</Param>
+			<Param Name="UserName">##ZID##</Param>
+		</Action>
+		<Action Type="IIS.CreateApplicationPool" ID="AppPool-ProgressiveProxy" Conditions="Environment=Development,QA,Stress,Gold,Production">
+			<Param Name="Name">ProgressiveProxy</Param>
+			<Param Name="Framework">v2.0</Param>
+			<Param Name="PipelineMode">Integrated</Param>
+			<Param Name="IdentityType">SpecificUser</Param>
+			<Param Name="UserName">##ZID##</Param>
+		</Action>
+		<Action Type="IIS.CreateApplicationPool" ID="AppPool-TestDriveEnroll" Conditions="Environment=Development,QA,Stress,Gold,Production">
+			<Param Name="Name">TestDriveEnroll</Param>
+			<Param Name="Framework">v4.0</Param>
+			<Param Name="PipelineMode">Integrated</Param>
+			<Param Name="IdentityType">SpecificUser</Param>
+			<Param Name="UserName">##ZID_Secondary##</Param>
+		</Action>
+		<Action Type="IIS.CreateApplicationPool" ID="AppPool-UBITrialCustomer" Conditions="Environment=Development,QA,Stress,Gold,Production">
+			<Param Name="Name">UBITrialCustomer</Param>
+			<Param Name="Framework">v4.0</Param>
+			<Param Name="PipelineMode">Integrated</Param>
+			<Param Name="IdentityType">SpecificUser</Param>
+			<Param Name="UserName">##ZID_Secondary##</Param>
+		</Action>
+		<Action Type="IIS.CreateSite" Conditions="Environment=Development,QA,Stress,Gold,Production">
+			<Param Name="Name">Privacy</Param>
+			<Param Name="Folder">d:\inetpub\vserver\ResourceCenter</Param>
+			<Param Name="ApplicationPool">Privacy</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=##WEBID##-privacy-##SERVERLAST2DIGITS##;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=##SERVERLAST2DIGITS##-privacy.##SecondarySiteBindingLetter##.progressive.com;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Production">Protocol=http;HostHeader=inet-##VIPID##-privacy_http;Port=80</Param>
+			<Param Name="LoggingFolder">##Log_Root##\Privacy</Param>
+			<Param Name="AnonymousAuth">True</Param>
+			<Param Name="WindowsAuth">False</Param>
+			<Param Name="FormsAuth">false</Param>
+		</Action>
+		<Action Type="IIS.CreateSite" Conditions="Environment=Development,QA,Stress,Gold,Production">
+			<Param Name="Name">ProgressiveCom</Param>
+			<Param Name="Folder">d:\inetpub\vserver\ProgressiveCom</Param>
+			<Param Name="ApplicationPool">ProgressiveCom</Param>
+			<Param Name="Binding">Protocol=http;HostHeader=inet-##Sitebindingletter##-Progressive;Port=80</Param>
+			<Param Name="Binding">Protocol=http;HostHeader=;Port=44300</Param>
+			<Param Name="Binding">Protocol=http;HostHeader=;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=inet-QA-Progressive-##SERVERLAST2DIGITS##;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=inet-QA-snapshot-Progressive-##SERVERLAST2DIGITS##;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=##SERVERLAST2DIGITS##-www.##SecondarySiteBindingLetter##.driveinsurance.com;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=##SERVERLAST2DIGITS##-claims.##SecondarysitebindingLetter##.Progressive.com;Port=80</Param>			
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=##SERVERLAST2DIGITS##-www.##SecondarySiteBindingLetter##.progressivecommercial.com;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=Netperf-www.##SecondarySiteBindingLetter##.progressive.com;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=Perf-www.##SecondarySiteBindingLetter##.progressive.com;Port=80</Param>
+			<Param Name="Binding" Conditions="Perf2Binding=Yes">Protocol=http;HostHeader=Perf2-www.##SecondarySiteBindingLetter##.progressive.com;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=##SERVERLAST2DIGITS##-www.##SecondarySiteBindingLetter##-progressive.com;Port=80</Param>
+			<Param Name="Binding">Protocol=http;HostHeader=inet-##Sitebindingletter##-Progressive;Port=44300</Param>
+			<Param Name="Binding" Conditions="Environment=Production">Protocol=http;HostHeader=##LOCATION##.Prod.progressive.com;port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Production">Protocol=http;HostHeader=snapshot.progressive;port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Production">Protocol=https;HostHeader=inet-##SiteBindingLetter##-prodtest_driveinsurance_https;Port=443</Param>
+			<Param Name="LoggingFolder">##Log_Root##\ProgressiveCom</Param>
+			<Param Name="AnonymousAuth">True</Param>
+			<Param Name="WindowsAuth">False</Param>
+		</Action>
+		<Action Type="IIS.CreateSite" Conditions="Environment=Development,QA,Stress,Gold,Production">
+			<Param Name="Name">ProgressiveProxy</Param>
+			<Param Name="Folder">d:\inetpub\vserver\ProgressiveProxy</Param>
+			<Param Name="ApplicationPool">ProgressiveProxy</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=##WEBID##-investorsproxy.progressive.com;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=##WEBID##-investorsproxy-##SERVERLAST2DIGITS##.progressive.local;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Development,QA,Stress,Gold">Protocol=http;HostHeader=##SERVERLAST2DIGITS##-progressiveproxy.##VIPID##.progressive.com;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Production">Protocol=http;Hostheader=##VIPID##-progproxy_http;Port=80</Param>
+			<Param Name="Binding" Conditions="Environment=Production">Protocol=http;HostHeader=##WEBID##-investorsproxy.progressive.com;Port=80</Param>
+			<Param Name="LoggingFolder">##Log_Root##\ProgressiveProxy</Param>
+			<Param Name="AnonymousAuth">True</Param>
+			<Param Name="WindowsAuth">True</Param>
+			<Param Name="FormsAuth">False</Param>
+		</Action>
+		<Action Type="IIS.CreateVirtualDirectory" ID="Snapshot" Conditions="Environment=Development,QA,Stress,Gold,Production">
+			<Param Name="Site">ProgressiveCom</Param>
+			<Param Name="Name">Snapshot</Param>
+			<Param Name="PhysicalPath">D:\inetpub\vserver\ProgressiveCom\Snapshot</Param>
+		</Action>
+		<Action Type="IIS.CreateApplication" ID="Snapshot-tdx" Conditions="Environment=Development,QA,Stress,Gold,Production">
+			<Param Name="Site">ProgressiveCom\SnapShot</Param>
+			<Param Name="Name">tdx</Param>
+			<Param Name="Folder">d:\inetpub\vserver\UBITrialCustomerExperience</Param>
+			<Param Name="ApplicationPool">UBITrialCustomer</Param>
+			<Param Name="AnonymousAuth">True</Param>
+			<Param Name="WindowsAuth">False</Param>
+		</Action>
+		<Action Type="IIS.CreateApplication" ID="Snapshot-TestDriveEnroll" Conditions="ENVIRONMENT=Development,QA,Stress,Gold,Production">
+			<Param Name="Site">ProgressiveCom\SnapShot</Param>
+			<Param Name="Name">TestDriveEnroll</Param>
+			<Param Name="Folder">d:\inetpub\vserver\SnapPrevEnroll</Param>
+			<Param Name="ApplicationPool">TestDriveEnroll</Param>
+			<Param Name="AnonymousAuth">True</Param>
+			<Param Name="WindowsAuth">False</Param>
+		</Action>
+		<Action Type="IIS.DeleteSite" ID="Progressive Default Site">
+			<Param Name="Name">Progressive Default Site</Param>
+		</Action>
+		<Action Type="IIS.DeleteApplication">
+			<Param Name="Site">Progressive Default Site</Param>
+			<Param Name="Name">Progressive Default Site</Param>	
+		</Action>
+		<Action Type="Powershell.ExecuteCommand">
+			<Param Name="Command">attrib -r d:\inetpub\vserver\default\*.* /s</Param>
+		</Action>
+		<Action Type="FileIO.DeleteFolder">
+			<Param Name="Folder">D:\inetpub\vserver\default</Param>
+			<Param Name="DeleteContents">FolderAndContents</Param>
+	    </Action>
+	</Actions>
+</AutomateBuild>

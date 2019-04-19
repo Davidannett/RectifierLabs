@@ -1,0 +1,244 @@
+[?1/?29/?2019 12:58 PM]  
+did you get a room or shoud i just dial in?
+ 
+[?1/?29/?2019 12:58 PM]  Jake Mohoric:  
+yeah 2nd floor
+momument
+ 
+[?1/?29/?2019 2:24 PM]  Jake Mohoric:  
+http://pgrproject/PWA/Timesheet.aspx 
+or type timesheet in your browser
+ 
+[?1/?29/?2019 2:24 PM]  
+k
+ 
+[?1/?29/?2019 2:24 PM]  Jake Mohoric:  
+you can poke around it
+ 
+[?1/?29/?2019 2:24 PM]  
+can i delete everything?
+ 
+[?1/?29/?2019 2:25 PM]  Jake Mohoric:  
+http://pgr/sites/MSProject/SitePages/Timesheets.aspx 
+this can give you the overview 
+ 
+[?1/?29/?2019 2:27 PM]  Jake Mohoric:  
+Dan will probably end up assigning you the required course but there is a link to it on that page if you want to get on top of it
+ 
+[?1/?29/?2019 2:27 PM]  
+actually already there
+ 
+[?1/?29/?2019 2:28 PM]  Jake Mohoric:  
+duddeeee
+thats awesome
+ 
+[?1/?29/?2019 2:28 PM]  
+yup yup
+ 
+[?1/?29/?2019 2:32 PM]  Jake Mohoric:  
+do you have XML spy on your laptop
+ 
+[?1/?29/?2019 2:33 PM]  
+looks liek it
+ 
+[?1/?29/?2019 2:39 PM]  Jake Mohoric:  
+great
+did you get your notes access 
+ 
+[?1/?29/?2019 2:41 PM]  
+no the guy responded but i wasn't lookign so he closed the ticket
+so i have to get back in again
+ 
+[?1/?29/?2019 2:41 PM]  Jake Mohoric:  
+oh shoot 
+ 
+[?1/?29/?2019 2:43 PM]  Jake Mohoric:  
+im submitting a few TFS access requests for you
+ 
+[?1/?29/?2019 2:44 PM]  
+oh no
+lol
+these?
+ 
+[?1/?29/?2019 2:44 PM]  
+Required TFS Groups:
+P-U-TFSADSSInfra-DP (team scripts)
+ " ADSS Infrastructure" (2nd one in the list is DP)
+P-U-TFSPROGSRVRAPPS-D (server build scripts)
+ "PRODUCTION-USERS-TFS-PROFSRVRAPPS-DEVELO"
+P-U-TFSPROGTOOLS-DP (server build scripts)
+ " Prog Tools-Develope"
+P-U-TFST000070-DP (DMG)
+"Production-Users-Tfs T000070-Developer"
+P-U-TFST000071-DP (DMG) 
+"T000071-Developer"
+P-U-TFST000072-DP (DMG)
+"T000072-Developer"
+P-U-TFST000073-DP (DMG) 
+"T000073-Developer"
+P-U-TFST000110-DP (Customer) 
+"T000110-Developer"
+P-U-TFST000111-DP (Customer) 
+"T000111-Developer"
+P-U-TFST000113-DP (Customer) 
+"T000113-Developer"
+P-U-TFSASPS-DP (ASPS stuff) 
+"access for ASPS-Dev"
+P-U-TFSBOXCAR-C - ONLY needed for Azure Cloud work 
+ 
+[?1/?29/?2019 2:47 PM]  Jake Mohoric:  
+luckily you only have to do this once
+ 
+[?1/?29/?2019 2:55 PM]  Jake Mohoric:  
+ok should be OK with TFS access now
+ 
+[?1/?29/?2019 2:55 PM]  
+thx
+ 
+[?1/?29/?2019 2:55 PM]  Jake Mohoric:  
+do you have visual studio 2013 
+ 
+[?1/?29/?2019 2:55 PM]  
+yessir
+ 
+[?1/?29/?2019 2:56 PM]  Jake Mohoric:  
+excellent
+did you get the Internet explorer favorites 
+ 
+[?1/?29/?2019 2:56 PM]  
+yessir
+ 
+[?1/?29/?2019 2:56 PM]  Jake Mohoric:  
+awesome
+ 
+[?1/?29/?2019 2:57 PM]  
+i can;t just put in a ticket for the lotus notes? has to be chat?
+ 
+[?1/?29/?2019 2:57 PM]  Jake Mohoric:  
+id try the ticket first 
+ 
+[?1/?29/?2019 2:57 PM]  
+oh ok cool, th page says use the chat
+ 
+[?1/?29/?2019 2:57 PM]  Jake Mohoric:  
+your immediate need for notes has been taken care of so we have time
+chat is quickest turn around ofcourse but yeah i would do ticket at this point
+ 
+[?1/?29/?2019 2:58 PM]  
+k
+ 
+[?1/?29/?2019 2:58 PM]  Jake Mohoric:  
+FYI you have the flex roles required for the team 
+we will need to wait for the TFS access to get approved
+ 
+[?1/?29/?2019 2:59 PM]  
+not like i really know what your saying but sweet lol
+ 
+[?1/?29/?2019 2:59 PM]  Jake Mohoric:  
+that mean
+means you have the rights you need to log into servers
+ 
+[?1/?29/?2019 2:59 PM]  
+ahh ok
+that makes sense
+ 
+[?1/?29/?2019 3:00 PM]  Jake Mohoric:  
+go to SRM and search for VPN
+Select Remote Access near the bottom
+fill that out 
+should get you VPN access
+ 
+[?1/?29/?2019 3:01 PM]  
+done
+ 
+[?1/?29/?2019 3:01 PM]  Jake Mohoric:  
+great!  
+oh hey
+your buddy
+that got layed off
+there is a referral program
+ 
+[?1/?29/?2019 3:02 PM]  
+yea steve mentioned it
+ 
+[?1/?29/?2019 3:02 PM]  Jake Mohoric:  
+ok great
+you know where to look for open positions?
+internally?
+ 
+[?1/?29/?2019 3:02 PM]  
+no sir
+ 
+[?1/?29/?2019 3:02 PM]  Jake Mohoric:  
+ok go to HRexpress
+ 
+[?1/?29/?2019 3:02 PM]  
+i told him to go look at the careers site
+k
+ 
+[?1/?29/?2019 3:03 PM]  Jake Mohoric:  
+Click on career opportunities
+Job opportunity Listing
+ 
+[?1/?29/?2019 3:03 PM]  
+k
+ 
+[?1/?29/?2019 3:04 PM]  Jake Mohoric:  
+also in HRexpress under quick links is employee referral
+fill that out for your buddy and get PAID
+ 
+[?1/?29/?2019 3:04 PM]  
+yea buddy
+i like money
+ 
+[?1/?29/?2019 3:05 PM]  Jake Mohoric:  
+so when your buddy find the job he wants get the job code from him
+and then look for it here
+see who the manager is 
+ 
+[?1/?29/?2019 3:05 PM]  
+ok
+ 
+[?1/?29/?2019 3:05 PM]  Jake Mohoric:  
+pretty straightforward from there.  But ya referrals get priority over everyone.  
+I referred Bret on our team
+and i got PAID up in here
+ 
+[?1/?29/?2019 3:06 PM]  
+nice nice
+appreciate the assistance
+ 
+[?1/?29/?2019 3:07 PM]  Jake Mohoric:  
+sucks getting laid off
+ 
+[?1/?29/?2019 3:07 PM]  
+yes it does
+i think it worked out pretty good so far for me at least
+was a rough year but i got to be with my boy, and find a good job
+ 
+[?1/?29/?2019 3:08 PM]  Jake Mohoric:  
+yeah seems like a positive year
+ 
+[?1/?29/?2019 3:08 PM]  
+well if it's not i'm coming after you lol
+j/k lol
+ 
+[?1/?29/?2019 3:14 PM] Jake Mohoric: 
+Behind_the_Apron_Tour_ColoradoSprings_employees-034.jpeg
+
+ [?1/?29/?2019 3:14 PM]  
+i'm filthy with jealousy lol
+ 
+[?1/?29/?2019 3:15 PM]  Jake Mohoric:  
+was kind of a cool experience
+so they did the tour of all the major offices not in Ohio. And a few minor
+So kind of cool they thought of the Remote Offices
+ 
+[?1/?29/?2019 3:15 PM]  
+yea that's super cool
+i watched one of the videos earlier
+ 
+[?1/?29/?2019 3:16 PM]  Jake Mohoric:  
+oh i forgot they did that
+ 
+We saved this conversation. You'll see it soon in the Conversations tab in Skype for Business and in the Conversation History folder in Outlook. 
