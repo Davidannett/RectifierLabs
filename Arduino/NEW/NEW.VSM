@@ -1,0 +1,16 @@
+<VBBSolution name="NEW">
+	<LAYOUT currentView="0" >
+	<VIEW id="1">
+		<PANE>[New Project]Breadboard0.VBB</PANE>
+	</VIEW>
+	<VIEW id="2">
+		<PANE>[New Project]Breadboard0.VBB</PANE>
+	</VIEW>
+	<VIEW id="3">
+		<PANE>[New Project]Breadboard0.VBB</PANE>
+	</VIEW>
+	</LAYOUT>
+<PROJECTS>
+<PROJECT>New Project.SIM</PROJECT>
+</PROJECTS>
+</VBBSolution>

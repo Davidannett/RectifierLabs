@@ -1,0 +1,1 @@
+"C:\Users\James\AppData\Local\Virtual Breadboard\VBB4Arduino 5.15\Muvium\arduino\jikes.exe" -g -classpath  "C:\Users\James\AppData\Local\Virtual Breadboard\VBB4Arduino 5.15\Muvium\muvium-sdk\muvium-JRT.jar";"C:\Users\James\AppData\Local\Virtual Breadboard\VBB4Arduino 5.15\Muvium\arduino\Arduino.jar"; "C:\VBB.NET\EG-4ARDUINO\Display\BarGraph\BarGraph.java"  2>&1

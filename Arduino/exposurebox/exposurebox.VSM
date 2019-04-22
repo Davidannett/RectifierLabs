@@ -1,0 +1,16 @@
+<VBBSolution name="exposurebox">
+	<LAYOUT currentView="0" >
+	<VIEW id="1">
+		<PANE>[BarGraph]BreadboardSheet.VBB</PANE>
+	</VIEW>
+	<VIEW id="2">
+		<PANE>[BarGraph]BreadboardSheet.VBB</PANE>
+	</VIEW>
+	<VIEW id="3">
+		<PANE>[BarGraph]BreadboardSheet.VBB</PANE>
+	</VIEW>
+	</LAYOUT>
+<PROJECTS>
+<PROJECT>BarGraph.SIM</PROJECT>
+</PROJECTS>
+</VBBSolution>

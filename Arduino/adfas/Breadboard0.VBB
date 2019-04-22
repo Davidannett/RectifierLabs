@@ -1,0 +1,363 @@
+<breadboard type="Breadboard">
+<GX>
+<XOFFSET>291.8774637236</XOFFSET>
+<YOFFSET>-163.621731038678</YOFFSET>
+<ZOOM>1.11920724317561</ZOOM>
+</GX>
+	<properties>
+	</properties>
+
+	<components>
+		<component>
+			<X>126.359725952148</X>
+			<Y>448.765808105469</Y>
+			<rotation>0</rotation>
+			<locked>False</locked>
+			<class>OpenVBBLibVB.Breadboard.Breadboard</class>
+				<properties>
+					<property>
+						<name>left</name>
+						<value>126.359725952148</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>top</name>
+						<value>448.765808105469</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>orientation</name>
+						<value>0</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>ID</name>
+						<value></value>
+						<description>The part number to appear in the BOM</description>
+					</property>
+					<property>
+						<name>netlist</name>
+						<value></value>
+						<description>Connect component pins together using netlist</description>
+					</property>
+					<property>
+						<name>FabID</name>
+						<value></value>
+						<description>(visible = false)</description>
+					</property>
+				</properties>
+
+		</component>
+		<component>
+			<X>194.973556518555</X>
+			<Y>644.526977539063</Y>
+			<rotation>90</rotation>
+			<locked>False</locked>
+			<class>com.virtualbreadboard.sim.components.uVM.containers.ArduinoNano</class>
+				<properties>
+					<property>
+						<name>Java App</name>
+						<value>Sleep</value>
+						<description>Application to execute (App)</description>
+					</property>
+					<property>
+						<name>AVR App</name>
+						<value>Arduino IDE Monitor</value>
+						<description>Coprocessor firmware AVR Binary (duo)</description>
+					</property>
+					<property>
+						<name>eeprom-jvm</name>
+						<value></value>
+						<description>implements the persistance of the eeprom between files </description>
+					</property>
+					<property>
+						<name>eeprom-avr</name>
+						<value></value>
+						<description>implements the persistance of the eeprom between files </description>
+					</property>
+					<property>
+						<name>eeprom size</name>
+						<value>1024</value>
+						<description>size of eeprom (visible = false)</description>
+					</property>
+					<property>
+						<name>Nets</name>
+						<value>ON</value>
+						<description>Are pin nets automatically assigned</description>
+					</property>
+					<property>
+						<name>left</name>
+						<value>194.973556518555</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>top</name>
+						<value>644.526977539063</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>orientation</name>
+						<value>90</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>ID</name>
+						<value></value>
+						<description>The part number to appear in the BOM</description>
+					</property>
+					<property>
+						<name>netlist</name>
+						<value></value>
+						<description>Connect component pins together using netlist</description>
+					</property>
+					<property>
+						<name>FabID</name>
+						<value></value>
+						<description>(visible = false)</description>
+					</property>
+				</properties>
+
+		</component>
+		<component>
+			<X>365.547210693359</X>
+			<Y>728.043395996094</Y>
+			<rotation>0</rotation>
+			<locked>False</locked>
+			<class>OpenVBBLibVB.Circuit.VSS</class>
+				<properties>
+					<property>
+						<name>left</name>
+						<value>365.547210693359</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>top</name>
+						<value>728.043395996094</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>orientation</name>
+						<value>0</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>ID</name>
+						<value></value>
+						<description>The part number to appear in the BOM</description>
+					</property>
+					<property>
+						<name>netlist</name>
+						<value></value>
+						<description>Connect component pins together using netlist</description>
+					</property>
+					<property>
+						<name>FabID</name>
+						<value></value>
+						<description>(visible = false)</description>
+					</property>
+				</properties>
+
+		</component>
+		<component>
+			<X>364.810028076172</X>
+			<Y>728.327087402344</Y>
+			<rotation>180</rotation>
+			<locked>False</locked>
+			<class>OpenVBBLibVB.Circuit.VPwr</class>
+				<properties>
+					<property>
+						<name>Voltage</name>
+						<value>5V</value>
+						<description>Sets the Voltage Level</description>
+					</property>
+					<property>
+						<name>left</name>
+						<value>364.810028076172</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>top</name>
+						<value>728.327087402344</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>orientation</name>
+						<value>180</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>ID</name>
+						<value></value>
+						<description>The part number to appear in the BOM</description>
+					</property>
+					<property>
+						<name>netlist</name>
+						<value></value>
+						<description>Connect component pins together using netlist</description>
+					</property>
+					<property>
+						<name>FabID</name>
+						<value></value>
+						<description>(visible = false)</description>
+					</property>
+				</properties>
+
+		</component>
+		<component>
+			<X>461.765045166016</X>
+			<Y>517.626342773438</Y>
+			<rotation>0</rotation>
+			<locked>False</locked>
+			<class>LED-TRI.VBBComponent</class>
+				<properties>
+					<property>
+						<name>PropertyBag</name>
+						<value>&lt;propBag&gt;
+&lt;PROPERTY name=&quot;ACTION.0&quot; value=&quot;0&quot; /&gt;&lt;PROPERTY name=&quot;ACTION.1&quot; value=&quot;0&quot; /&gt;&lt;PROPERTY name=&quot;ACTION.2&quot; value=&quot;0&quot; /&gt;&lt;PROPERTY name=&quot;ICE:Bit&quot; value=&quot;&quot; /&gt;&lt;PROPERTY name=&quot;ID&quot; value=&quot;&quot; /&gt;&lt;PROPERTY name=&quot;netlist&quot; value=&quot;&quot; /&gt;&lt;PROPERTY name=&quot;LED1&quot; value=&quot;red&quot; /&gt;&lt;PROPERTY name=&quot;LED2&quot; value=&quot;green&quot; /&gt;&lt;PROPERTY name=&quot;LED3&quot; value=&quot;blue&quot; /&gt;&lt;/propBag&gt;</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>PinDiagram</name>
+						<value></value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>Definition</name>
+						<value>LED-TRI.VBBComponent</value>
+						<description>The Definition of the Component (visible = false)</description>
+					</property>
+					<property>
+						<name>ICE:Bit</name>
+						<value></value>
+						<description>The ID of the ICEBit to pass-through (visible = false)</description>
+					</property>
+					<property>
+						<name>left</name>
+						<value>461.765045166016</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>top</name>
+						<value>517.626342773438</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>orientation</name>
+						<value>0</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>ID</name>
+						<value></value>
+						<description>The part number to appear in the BOM</description>
+					</property>
+					<property>
+						<name>netlist</name>
+						<value></value>
+						<description>Connect component pins together using netlist</description>
+					</property>
+					<property>
+						<name>FabID</name>
+						<value></value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>LED1</name>
+						<value>red</value>
+						<description>Color</description>
+					</property>
+					<property>
+						<name>LED2</name>
+						<value>green</value>
+						<description>Color</description>
+					</property>
+					<property>
+						<name>LED3</name>
+						<value>blue</value>
+						<description>Color</description>
+					</property>
+				</properties>
+
+		</component>
+		<component>
+			<X>644</X>
+			<Y>-1162</Y>
+			<rotation>0</rotation>
+			<locked>False</locked>
+			<class>OpenVBBLibVB.Breadboard.Breadboard</class>
+				<properties>
+					<property>
+						<name>left</name>
+						<value>644</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>top</name>
+						<value>-1162</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>orientation</name>
+						<value>0</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>ID</name>
+						<value></value>
+						<description>The part number to appear in the BOM</description>
+					</property>
+					<property>
+						<name>netlist</name>
+						<value></value>
+						<description>Connect component pins together using netlist</description>
+					</property>
+					<property>
+						<name>FabID</name>
+						<value></value>
+						<description>(visible = false)</description>
+					</property>
+				</properties>
+
+		</component>
+	</components>
+	<links>
+			<g id="NETLIST_REPRESENTATION" stroke="blue" stroke-width="1">
+			<g czoom="1.3591851678348" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="-490" y1="728" x2="-490" y2="644" width="3" layer="" />
+			</g>
+			<g czoom="1.46412489165205" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="42.4375" y1="99.75" x2="42.4375" y2="98.875" width="3" layer="" />
+			</g>
+			<g czoom="1.46412489165205" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="42.875" y1="98.875" x2="42.875" y2="99.75" width="3" layer="" />
+			</g>
+			<g czoom="1.46412489165205" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="44.1875" y1="97.125" x2="44.1875" y2="99.75" width="3" layer="" />
+			</g>
+			<g czoom="1.46412489165205" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="40.6875" y1="96.6875" x2="44.1875" y2="97.125" width="3" layer="" />
+			</g>
+			<g czoom="1.46412489165205" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="40.6875" y1="97.125" x2="44.1875" y2="97.125" width="3" layer="" />
+			</g>
+			<g czoom="1.46412489165205" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="40.25" y1="97.125" x2="44.625" y2="97.5625" width="3" layer="" />
+			</g>
+			<g czoom="2.0813513514605" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="238" y1="546" x2="490" y2="546" width="3" layer="" />
+			</g>
+			<g czoom="2.0813513514605" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="224" y1="532" x2="490" y2="532" width="3" layer="" />
+			</g>
+			<g czoom="2.0813513514605" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="210" y1="518" x2="462" y2="518" width="3" layer="" />
+			</g>
+			<g czoom="2.0813513514605" stroke="blue" virtual="False" stroke-width="3">
+				<line x1="476" y1="728" x2="476" y2="574" width="3" layer="" />
+			</g>
+		</g>
+		<g id="JUNCTIONS" stroke="black" fill="black">
+		</g>
+
+	</links>
+</breadboard>
