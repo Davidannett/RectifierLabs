@@ -9,15 +9,17 @@
                 "${workspaceFolder}/**",
                 "c:/Users/Ryoko/Dropbox/arduino/libraries/",
                 "C:/Program Files (x86)/Arduino/**"
-            ],
+            ],            
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "SERIAL"
             ],
             "intelliSenseMode": "msvc-x64",
             "forcedInclude": [
-                "C:\\Users\\Ryoko\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.6.23\\cores\\arduino\\Arduino.h"
+                "C:\\Users\\Ryoko\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.6.23\\cores\\arduino\\Arduino.h",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\HardwareSerial.h"
             ]
         }
     ],

@@ -2,5 +2,6 @@
     "programmer": "AVRISP mkII",
     "board": "arduino:avr:nano",
     "configuration": "cpu=atmega328",
-    "port": "COM1"
+    "port": "COM1",
+    "sketch": "Arduino\\button_experiment\\button_experiment.ino"
 }
