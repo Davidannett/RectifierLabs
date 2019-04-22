@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /******************************************************************
  Created with PROGRAMINO IDE for Arduino - 29.04.2017 12:39:39
  Project     : UV PCB Exposure Box
@@ -16,7 +15,7 @@ int startbuttonState = 0;         // variable for reading the pushbutton status
   void setup()
   {
     lcd.begin(16, 2);
-	clearscreen()
+	clearscreen();
     //lcd.setCursor(0, 0);
     //lcd.print("                ");
     //lcd.setCursor(0, 1);
@@ -35,7 +34,7 @@ int startbuttonState = 0;         // variable for reading the pushbutton status
     startbuttonState = digitalRead(startbuttonPin);
       if (startbuttonState == HIGH) 
         {
-			expose()
+			expose();
           //digitalWrite(UVPanelPin, HIGH);
           //int startbuttonState = 0;
           //lcd.setCursor(0, 0);
@@ -59,12 +58,12 @@ int startbuttonState = 0;         // variable for reading the pushbutton status
           //lcd.print("                ");
           //lcd.setCursor(0, 1);
           //lcd.print("                ");
-        } 
+        }
       else 
         {
           Serial.write("pin still LOW");
           Serial.println("");
-		  waiting()
+		  waiting();
           //lcd.setCursor(0, 0);
           //lcd.print("Waiting to Start");
           //delay(150);
@@ -110,7 +109,7 @@ void waiting()
 	delay(150);
 	lcd.setCursor(0, 1);
 	lcd.print("                ");
-	delay(150)
+	delay(150);
 }
 
 void clearscreen()
@@ -125,7 +124,7 @@ void expose()
 {
 	digitalWrite(UVPanelPin, HIGH);
 	int startbuttonState = 0;
-	clearscreen()
+	clearscreen();
 	//lcd.setCursor(0, 0);
 	//lcd.print("                ");
 	//lcd.setCursor(0, 1);
@@ -136,7 +135,7 @@ void expose()
 	Serial.println("");
 	delay(5000);
 	digitalWrite(UVPanelPin, LOW);
-	clearscreen()
+	clearscreen();
 	//lcd.setCursor(0, 0);
 	//lcd.print("                ");
 	//lcd.setCursor(0, 1);
@@ -144,7 +143,7 @@ void expose()
 	lcd.setCursor(0, 1);
 	lcd.print("    EXPOSED   ");
 	delay(2000);
-	clearscreen()
+	clearscreen();
 	//lcd.setCursor(0, 0);
 	//lcd.print("                ");
 	//lcd.setCursor(0, 1);
