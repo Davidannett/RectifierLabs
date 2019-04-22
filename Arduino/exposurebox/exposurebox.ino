@@ -21,7 +21,7 @@ int startbuttonState = 0;         // variable for reading the pushbutton status
     //lcd.print("                ");
     //lcd.setCursor(0, 1);
     //lcd.print("                ");
-    ;lcd.setCursor(0, 1);
+    lcd.setCursor(0, 1);
     lcd.print(" opening serial ");  
     Serial.begin(9600);
     pinMode(LED_BUILTIN, OUTPUT);
